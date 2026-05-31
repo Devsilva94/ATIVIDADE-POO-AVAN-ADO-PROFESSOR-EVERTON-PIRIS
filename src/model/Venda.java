@@ -1,9 +1,6 @@
 package model;
 
-/**
- * Classe que representa uma venda.
- * Cada linha do CSV será transformada em um objeto Venda.
- */
+//Classe venda
 public class Venda {
 
     private int id;
