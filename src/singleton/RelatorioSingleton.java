@@ -10,7 +10,7 @@ public class RelatorioSingleton {
     // atribuição do Sigleton(única instância)
     private static volatile RelatorioSingleton instancia;
 
-    // --- Estado Thread-Safe ---
+
 
     // Valor total armazenado em centavos
     private final AtomicLong valorTotalCentavos = new AtomicLong(0);
@@ -21,8 +21,7 @@ public class RelatorioSingleton {
     // Mapeamento dos produtos pelo mais vendido
     private final ConcurrentHashMap<String, AtomicInteger> vendasPorProduto =
             new ConcurrentHashMap<>();
-
-    // Construtor privado
+    
     private RelatorioSingleton() {}
 
     // Criação do Singleton de forma segura em ambiente multithread
