@@ -40,11 +40,11 @@ public class CSVReader {
                 }
 
                 try {
-                    int id             = Integer.parseInt(campos[0].trim());
-                    String produto     = campos[1].trim();
-                    String categoria   = campos[2].trim();
-                    double valor       = Double.parseDouble(campos[3].trim());
-                    int quantidade     = Integer.parseInt(campos[4].trim());
+                    int id = Integer.parseInt(campos[0].trim());
+                    String produto = campos[1].trim();
+                    String categoria = campos[2].trim();
+                    double valor = Double.parseDouble(campos[3].trim());
+                    int quantidade = Integer.parseInt(campos[4].trim());
 
                     vendas.add(new Venda(id, produto, categoria, valor, quantidade));
                 } catch (NumberFormatException e) {
